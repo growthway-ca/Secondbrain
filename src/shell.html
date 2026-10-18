@@ -1,0 +1,45 @@
+<title>Commonplace</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="A local-first second brain: capture, journal, link and rediscover your notes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap">
+<style>
+/*STYLES*/
+</style>
+<div class="app">
+  <aside class="rail" aria-label="Sidebar">
+    <a class="brand" href="#/today"><b>Commonplace</b></a>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <div id="rail-pinned"></div>
+    <div id="rail-tags"></div>
+    <div class="grow"></div>
+    <div class="foot">
+      <div class="status" id="status" aria-live="polite"></div>
+      <div class="row-btns">
+        <button class="btn ghost sm" data-act="tools">Import and backup</button>
+        <button class="ib" data-act="theme" title="Switch theme" aria-label="Switch theme"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+        <button class="ib" data-act="keys" title="Keyboard shortcuts" aria-label="Keyboard shortcuts"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M7.5 14h9"/></svg></button>
+      </div>
+    </div>
+  </aside>
+  <div class="work">
+    <header class="topbar">
+      <a class="brand m-brand" href="#/today" aria-label="Commonplace, Today"><b>Commonplace</b></a>
+      <button class="search-trigger" data-act="palette" aria-label="Search notes and commands"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.5-4.5"/></svg><span>Search or jump to…</span><kbd>⌘ K</kbd></button>
+      <button class="btn soft hide" id="askBtn" data-act="ask"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.4 7.6L3 21l1.4-5.6A8.5 8.5 0 1 1 21 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01" stroke-width="2.4"/></svg><span class="hide-m">Ask your notes</span></button>
+      <button class="ib m-only" data-act="tools" aria-label="Import and backup"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5M4 15v4.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V15"/></svg></button>
+      <button class="btn accent" data-act="new" aria-label="New note"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span class="hide-m">New note</span></button>
+    </header>
+    <main class="main" id="main"></main>
+  </div>
+  <nav class="dock" id="dock" aria-label="Main"></nav>
+</div>
+<dialog id="dlg"></dialog>
+<dialog id="palette" aria-label="Search and commands"></dialog>
+<dialog id="cfm"></dialog>
+<div id="toast" class="hide" role="status" aria-live="polite"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+/*SCRIPTS*/
+</script>
